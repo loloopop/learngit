@@ -1,3 +1,3 @@
 1.编写webapp骨架时候打开主页是下载文件。
-原因：编码问题导致。
-解决办法：return web.Response(body=b'<h1>Awesome</h1>', content_type='text/html', charset='UTF-8')
+原因：编码问题导致，按如下方式设置编码。
+web.Response(body=bytes('<h1>你好</h1>', encoding='utf-8') ,headers={'Content-Type':'text/html;charset=utf-8'})
