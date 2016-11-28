@@ -1,1 +1,3 @@
-webapp
+1.编写webapp骨架时候打开主页是下载文件。
+原因：编码问题导致。
+解决办法：return web.Response(body=b'<h1>Awesome</h1>', content_type='text/html', charset='UTF-8')
