@@ -1,6 +1,11 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__='岳立强' 
+__author__ = '岳立强'
+
+'''
+async web application.
+'''
 
 import logging; logging.basicConfig(level=logging.INFO)
 
